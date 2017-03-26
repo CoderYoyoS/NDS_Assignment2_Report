@@ -1,0 +1,21 @@
+——————————————————————
+ASSERTIONS
+——————————————————————
+We'll just do 2!
+——————————————————————
+LOGIN PAGE
+——————————————————————
+1.
+ON PAGE LOAD:
+	-> ‘ <h1>Log in.</h1> ‘ exists in the response
+
+——————————————————————
+SURVEY PAGE
+——————————————————————
+2.
+-ON PAGE LOAD:
+	-> ‘ <title>Admin Surveys</title> ‘ exists in response
+
+
+
+

@@ -1,0 +1,17 @@
+INTRO - talk about what we’re going to do/talk about, why you should test an application, what benefits can be drawn
+
+SYSTEM OVERVIEW - Talk about the app itself (Cloud Survey), its capabilities ie. can login, can create a survey(CRUD DB operations)… Talk about the platform, where the app is deployed, what azure is capable of providing the team testing the app
+
+Methodology - What things to consider before testing, what test-strategies are going to be used, what valuable information will be gained from implementing the strategies, what can be determined ultimately from the outlined strategies
+
+Test cases -  design our test cases, why each test will give us quality/different data.One might simulate users landing, another will simulate a user logging in, another will simulate a user interacting with the DB etc… Adopt a specific format(see __resource for sample image of test case).
+
+Test Params - What situations are we running the tests under? What time of the day? What type of test? Load, Stress? etc, What variables are we to consider that the tests are running under?
+
+Results - This is graph/table time. Test 1 ran at this time, under these circumstances and this is what we go, repeat for test 2,3,4 whatever
+
+Analysis - Test one in comparison to test 2 gave us this etc etc…
+
+Conclusions - You know the drill here
+
+Appendices - Jmeter scripts, reasons for test timings etc
