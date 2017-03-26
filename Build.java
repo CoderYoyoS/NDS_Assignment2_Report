@@ -5,7 +5,7 @@ public class Build {
 
     public static void main(String[] args) throws IOException,Exception {
 
-        File frontMaterial = new File(System.getProperty("user.dir")+"/00_front-material");
+        File frontMaterial = new File(System.getProperty("user.dir")+"/00_front_material");
         File introduction = new File(System.getProperty("user.dir")+"/01_sections/00_introduction");
         File sys_overview = new File(System.getProperty("user.dir")+"/01_sections/01_system_overview");
         File method = new File(System.getProperty("user.dir")+"/01_sections/02_methodology");
