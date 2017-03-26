@@ -7,12 +7,12 @@ public class Build {
 
         File frontMaterial = new File(System.getProperty("user.dir")+"/00_front-material");
         File introduction = new File(System.getProperty("user.dir")+"/01_sections/00_introduction");
-        File lit_review = new File(System.getProperty("user.dir")+"/01_sections/01_system_overview");
+        File sys_overview = new File(System.getProperty("user.dir")+"/01_sections/01_system_overview");
         File method = new File(System.getProperty("user.dir")+"/01_sections/02_methodology");
-        File system_reqs = new File(System.getProperty("user.dir")+"/01_sections/03_test_cases");
-        File sys_design = new File(System.getProperty("user.dir")+"/01_sections/04_test_parameters");
-        File implementation = new File(System.getProperty("user.dir")+"/01_sections/05_results");
-        File test_eval = new File(System.getProperty("user.dir")+"/01_sections/06_analysis");
+        File test_cases = new File(System.getProperty("user.dir")+"/01_sections/03_test_cases");
+        File test_params = new File(System.getProperty("user.dir")+"/01_sections/04_test_parameters");
+        File results = new File(System.getProperty("user.dir")+"/01_sections/05_results");
+        File analysis = new File(System.getProperty("user.dir")+"/01_sections/06_analysis");
         File conclusion = new File(System.getProperty("user.dir")+"/01_sections/07_conclusions_furtherwork");
         File appendices = new File(System.getProperty("user.dir")+"/02_appendices");
         File references = new File(System.getProperty("user.dir")+"/03_references");
@@ -25,24 +25,24 @@ public class Build {
 
         File[] frontMaterialFiles = frontMaterial.listFiles(fileFilter);
         File[] introFiles = introduction.listFiles(fileFilter);
-        File[] lit_review_files = lit_review.listFiles(fileFilter);
+        File[] sys_overview_files = sys_overview.listFiles(fileFilter);
         File[] method_files = method.listFiles(fileFilter);
-        File[] sys_reqs_files = system_reqs.listFiles(fileFilter);
-        File[] sys_design_files = sys_design.listFiles(fileFilter);
-        File[] implementation_files = implementation.listFiles(fileFilter);
-        File[] test_eval_files = test_eval.listFiles(fileFilter);
+        File[] test_case_files = test_cases.listFiles(fileFilter);
+        File[] test_params_files = test_params.listFiles(fileFilter);
+        File[] results_files = results.listFiles(fileFilter);
+        File[] analysis_files = analysis.listFiles(fileFilter);
         File[] conclusion_files = conclusion.listFiles(fileFilter);
         File[] appendicesFiles = appendices.listFiles(fileFilter);
         File[] referencesFiles = references.listFiles(fileFilter);
 
         String[] frontMaterialFileNames = new String[frontMaterialFiles.length];
         String[] introFileNames = new String[introFiles.length];
-        String[] lit_review_filenames = new String[lit_review_files.length];
+        String[] sys_overview_filenames = new String[sys_overview_files.length];
         String[] method_filenames = new String[method_files.length];
-        String[] sys_req_filenames = new String[sys_reqs_files.length];
-        String[] sys_design_filenames = new String[sys_design_files.length];
-        String[] implementation_filenames = new String[implementation_files.length];
-        String[] test_eval_filenames = new String[test_eval_files.length];
+        String[] sys_req_filenames = new String[test_case_files.length];
+        String[] test_params_filenames = new String[test_params_files.length];
+        String[] results_filenames = new String[results_files.length];
+        String[] analysis_filenames = new String[analysis_files.length];
         String[] conclusion_filenames = new String[conclusion_files.length];
         String[] appendicesFileNames = new String[appendicesFiles.length];
         String[] referncesFileNames = new String[referencesFiles.length];
@@ -69,11 +69,11 @@ public class Build {
 		}
 
 		i=0;
-		for (File file : lit_review_files) {
+		for (File file : sys_overview_files) {
 			if (file.isDirectory()) {
 				System.out.print("Don't create anymore directories in here!!!!");
 			} else {
-				lit_review_filenames[i] = file.getCanonicalPath();
+				sys_overview_filenames[i] = file.getCanonicalPath();
 				i++;
 			}
 		}
@@ -89,7 +89,7 @@ public class Build {
 		}
 
 		i=0;
-		for (File file : sys_reqs_files) {
+		for (File file : test_case_files) {
 			if (file.isDirectory()) {
 				System.out.print("Don't create anymore directories in here!!!!");
 			} else {
@@ -99,31 +99,31 @@ public class Build {
 		}
 
 		i=0;
-		for (File file : sys_design_files) {
+		for (File file : test_params_files) {
 			if (file.isDirectory()) {
 				System.out.print("Don't create anymore directories in here!!!!");
 			} else {
-				sys_design_filenames[i] = file.getCanonicalPath();
+				test_params_filenames[i] = file.getCanonicalPath();
 				i++;
 			}
 		}
 
 		i=0;
-		for (File file : implementation_files) {
+		for (File file : results_files) {
 			if (file.isDirectory()) {
 				System.out.print("Don't create anymore directories in here!!!!");
 			} else {
-				implementation_filenames[i] = file.getCanonicalPath();
+				results_filenames[i] = file.getCanonicalPath();
 				i++;
 			}
 		}
 
 		i=0;
-		for (File file : test_eval_files) {
+		for (File file : analysis_files) {
 			if (file.isDirectory()) {
 				System.out.print("Don't create anymore directories in here!!!!");
 			} else {
-				test_eval_filenames[i] = file.getCanonicalPath();
+				analysis_filenames[i] = file.getCanonicalPath();
 				i++;
 			}
 		}
@@ -168,9 +168,9 @@ public class Build {
 			intropaths += introFileNames[t]+" "; 
 		}
 
-		String litrevpaths = "";
-		for(int t = 0; t < lit_review_filenames.length; t++){
-			litrevpaths += lit_review_filenames[t]+" "; 
+		String sys_overview_paths = "";
+		for(int t = 0; t < sys_overview_filenames.length; t++){
+			sys_overview_paths += sys_overview_filenames[t]+" ";
 		}
 
 		String methodpaths = "";
@@ -183,19 +183,19 @@ public class Build {
 			sysreqpaths +=  sys_req_filenames[t]+" "; 
 		}
 
-		String sysdesignpaths = "";
-		for(int t = 0; t < sys_design_filenames.length; t++){
-			sysdesignpaths += sys_design_filenames[t]+" ";
+		String test_params_paths = "";
+		for(int t = 0; t < test_params_filenames.length; t++){
+			test_params_paths += test_params_filenames[t]+" ";
 		}
 
-		String imppaths = "";
-		for(int t = 0; t < implementation_filenames.length; t++){
-			imppaths += implementation_filenames[t]+" "; 
+		String results_paths = "";
+		for(int t = 0; t < results_filenames.length; t++){
+			results_paths += results_filenames[t]+" ";
 		}
 
-		String testevalpaths = "";
-		for(int t = 0; t < test_eval_filenames.length; t++){
-			testevalpaths += test_eval_filenames[t]+" "; 
+		String analysis_paths = "";
+		for(int t = 0; t < analysis_filenames.length; t++){
+			analysis_paths += analysis_filenames[t]+" ";
 		}
 
 		String conclusionpaths = "";
@@ -211,21 +211,20 @@ public class Build {
         ProcessBuilder builder = new ProcessBuilder(
 				"cmd.exe", "/c"+"pandoc --latex-engine=xelatex -H "+
 				"_config/preamble.tex -V fontsize=10pt -V documentclass:book"+
-				" -V papersize:a4paper -V classoption:openright --number-sections"+
-				" --bibliography=03_references/references.bib "+
+				" -V papersize:a4paper -V classoption:oneside --number-sections "+
 				frontmatpaths+
 				"_config/toc.md "+
 				intropaths+
-				litrevpaths+
+				sys_overview_paths+
 				methodpaths+
 				sysreqpaths+
-				sysdesignpaths+
-				imppaths+
-				testevalpaths+
+				test_params_paths+
+				results_paths+
+				analysis_paths+
 				conclusionpaths+
 				appendpaths+
 				"03_references/references.md"+
-				" -o output.pdf"
+				" -o B00029598_B00082716_B00079288_Homan_Kelly_Ward_NDS_Assignment2_Report.pdf"
             );
 
 		builder.redirectErrorStream(true);

@@ -1,6 +1,6 @@
 # Results
 
-This is the Implementation section    
+This is the Results section    
 
 Insert empty line at end of section
 

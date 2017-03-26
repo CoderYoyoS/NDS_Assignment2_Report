@@ -4,13 +4,13 @@
         \vspace*{1cm}
         
 
-       \large{ \textbf{ \uppercase{Assignment 2 - Capacity Testing A Cloud App}}}
+       \large{ \textbf{ \uppercase{Network Distributed Computing - Assignment 2 - Capacity Testing A Cloud App}}}
         
         \vspace{0.5cm}
         
         \vspace{1.5cm}
  
-        Submitted in part fulfilment for the degree of
+        Submitted in part fulfillment for the degree of
         \\
         \large{\textsc{
         B.Sc. in Science in Computing
