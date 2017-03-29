@@ -1,6 +1,9 @@
 # System Overview
 
-This is the system overview sec
-Insert empty line at end of section
+In order to conduct performance tests a web application called Cloud Survey is used. This application uses a number of contemporary technologies used in the industry today. This consists of three frameworks/libraries to incorperate a an easy to use and comprahensive web application. Furthermore, the application is depolyed to a Platform as a service (Paas) that provides an essential infrastructure for web application development. The following sections discusses the technologies implemented to the application and used during the process of testing.
 
-  
+## ASP.NET
+ASP.NET is a web application framework developed by Microsoft, part of the .NET Framework. ASP.NET provides development in a number of programming languages supported by the Common Language Runtim (CLR). With the user of this framework, dynamic web pages are achievable. In this case, ASP.NET MVC 4 is used.
+
+### ASP.NET MVC 4
+ASP.NET MVC 4 is a subset of ASP.NET which allows applications to be developed using the Model, View Controller design pattern. This design pattern divides the user interface display, the controlling backend logic and the data from one another. MVC 4 includes a number of key features which include the ASP.NET Web application program interface which is used for recieving and distrubuting HTTP services and provides cross-platforming usability (PC, phone, laptop etc.). The ASP.NET Web Pages/Razor which allows for lightweight processing of server code and HTML to create dynamic web pages. Lastly, web optimization is also intergrated, which is a framework that is used for bundling of CSS files and scripts.
