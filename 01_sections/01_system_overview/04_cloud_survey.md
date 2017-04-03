@@ -1,9 +1,9 @@
-##Cloud Survey Web Application
+##CloudSurvey Web Application
 
 Cloud Survey is a web application deployed on Azure platform that will be used for testing. The app consists of a adminstrator login page, that allows an admin to log into the application.
 
 ![Admin Login Page. \label{Admin Login}](04_assets/AdminLogin.jpg)
-Upon succesful login, the page is updated to display the Admin Survey page. This page is a contains a list of surveys that have been previously created by an admin, if any. When an admin wishes to create a new survey, they must click on the 'New Survey' button which will update the view.
+Upon successful login, the page is updated to display the Admin Survey page. This page is a contains a list of surveys that have been previously created by an admin, if any. When an admin wishes to create a new survey, they must click on the 'New Survey' button which will update the view.
 
 ![New Survey Button. \label{New Survey}](04_assets/NewSurvey.jpg)
 

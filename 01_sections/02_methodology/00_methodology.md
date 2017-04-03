@@ -1,7 +1,4 @@
 # Methodology
 
-This is the Methodology section  
+In order to successfully test this web application several proven methodologies will be explored before the execution of the tests. Several considerations will be made before running tests in order to ensure the accurate compilation of data and meaningful test results are acquired. Other conditions will also be considered. There may be certain criterion that are outside of the scope of this particular study. The testing methodologies that will be adopted and followed will lend themselves to industry-standard methods, however, there are several things to note about the CloudSurvey application that may affect certain results. These considerations will be highlighted later in this section to provide a reasoning as to why certain work-arounds will be used to provide the highest possible realistic test environment.
 
-Insert empty line at end of section
-
-  

@@ -1,0 +1,3 @@
+##Determining Adequate Load
+Determining the point of failure in the application in situations of high load will be the key to accurately load testing the application. High load usually introduces points of consistent transaction failures and frequent HTTP 500 errors. Response times should rise and latency issues should also arise due to a higher volume of requests. Determining the user limit for the application is necessary for arriving at the point that users can interact with the web application whilst the app server remains stable. Theoretically, the maximum amount of users that CloudSurvey can handle should be more than the required amount of users that the app can handle whilst it is deployed and live. 
+
