@@ -7,3 +7,4 @@ Stress testing was not carried out without any of the preceeding test case scena
 - Test Case 2: though it did not exceed its CPU time quota, would have exceeded it with a minimal increase of threads, therefore resulting in the application going offline and an inconclusive point of server failure.
 
 - Test Case 3: same reasons as test case 2.
+
