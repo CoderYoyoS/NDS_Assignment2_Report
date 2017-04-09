@@ -1,6 +1,6 @@
-## Appendix 1
+## Appendix 1 - JMeter Scripts Source
 
-Some appendix stuff
+Please visit this link if you would like to view the JMeter scripts in this project.
 
-Insert empty line at end of section
+https://github.com/CoderYoyoS/NDS_Assignment2_.jmx_files
 

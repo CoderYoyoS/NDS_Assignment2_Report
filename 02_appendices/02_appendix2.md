@@ -1,6 +1,6 @@
-## Appendix 2
+## Appendix 2 - How this report was written
 
-Some appendix stuff
+Please visit the below link if you would like to see how this report was written:
 
-Insert empty line at end of section
+https://github.com/CoderYoyoS/NDS_Assignment2_Report
 

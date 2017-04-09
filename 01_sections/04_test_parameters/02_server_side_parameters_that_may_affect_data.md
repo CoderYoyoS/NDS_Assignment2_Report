@@ -1,0 +1,12 @@
+## Server-side Parameters that may affect Data
+
+There are also some considerations to make about how the server side data may be corrupted by limitations on the 'free' tier that the CloudSurvey application is operating under. Because the application is hosted on the Azure platform, on a tier that is mainly used by hobbyists and developers that are developing apps for exploring ideas and school/college projects, there is limitations that exist that can interfere with loading an excessive amount of users onto the application. Part of the tiering system on Azure(and all PaaS providers) is that there are certain quotas placed upon resources that every application can consume depending on what price plan you are on. This means that if the application was in high-demand the application can be scaled adequately to deal with a higher volume of user-load. In this instance, as has been aforementioned, the CloudSurvey application is hosted on the lowest tier which in turn means that the least amount of resources are allocated to the application.
+
+### 3 Minute CPU Time Quota
+
+One of the quotas that is most harmful to accurately load-testing this application is the 3 minute CU time quota. Each time a piece of code in the application has to be compiled/executed and also, each time a request that interacts with some part of the applications code, it contributes to the CPU time being consumed. Depending on how CPU-hungry a particular operation is it can cause a lower/higher amount of CPU time to be used. If the quota is exceeded, the web application shuts down. On the client side, whilst profiling, a consistent amount of 402 errors will occur, however, on the server side profiler it will not flag any errors with requests because the website has been put into a disabled state. This means that measuring client side data against server side data, in this instance, will not harvest any useful results.
+
+This also hinders being able to determine the load-testing thresholds in a certain context. For example, if an arbitrary number of users are loaded onto the system and the website goes into a disabled state because of exceeding the CPU time quota, this doesn't represent any *actual* consequences of a load-test, it merely indicates that the application has gone outside its pre-defined limits of fair usage. It is no reflection on the server itself mismanaging requests.
+
+
+
